@@ -34,6 +34,6 @@ def index():
 def thankyou():
     return render_template('thankyou.html')
 
-
+# this is necessaary when you want to run this app only from this file
 if __name__ == '__main__':
     app.run(debug=True)

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        {% for items in my_list%}
+        <li>{{items}}</li>
+        {% endfor %}
+    </ul>
+
+    <ul>
+        {% for names in str_list%}
+        <li>{{names}}</li>
+        {% endfor %}
+    </ul>
+
+    {% if 'Matkii' in str_list %}
+    <p>
+        Matkii is the found in the list
+    </p>
+    {% else %}
+    <p>
+        Matkiii is not found in the list
+    </p>
+    {% endif %}
+
+
+    {% if user_logged_in == True %}
+        <p>User is logged in</p>
+    {% else %}
+        <p> Matkiii...!You are not logged in</p>
+    {% endif %}
+
+
+    
+    <h1>{{ my_list }}</h1>
+
+</body>
+</html>

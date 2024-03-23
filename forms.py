@@ -15,7 +15,7 @@ def page_not_found(e):
 def thanku():
     first = request.args.get('first')
     last = request.args.get('last')
-    return render_template('thanku.html',first=first,last=last)
+    return render_template('thanku.html', first=first,last=last)
 
 if __name__ == '__main__':
     app.run(debug=True)
